@@ -21,7 +21,7 @@ echo GridView::widget([
         'name',
         [
             'attribute' => 'type',
-            // 'filter' => ['normal'=>'normal', 'fighting'=>'fighting''flying'=>'flying''poison'=>'poison''ground'=>'ground''rock'=>'rock''bug'=>'bug''ghost'=>'ghost''steel'=>'steel''fire'=>'fire''water'=>'water''grass'=>'grass''electric'=>'electric''psychic'=>'psychic''ice'=>'ice''dragon'=>'dragon''dark'=>'dark''fairy'=>'fairy''unknown'=>'unknown''shadow'=>'shadow']
+            'filter' => ['normal'=>'normal', 'fighting'=>'fighting', 'flying'=>'flying', 'poison'=>'poison', 'ground'=>'ground', 'rock'=>'rock', 'bug'=>'bug', 'ghost'=>'ghost', 'steel'=>'steel', 'fire'=>'fire', 'water'=>'water', 'grass'=>'grass', 'electric'=>'electric', 'psychic'=>'psychic', 'ice'=>'ice', 'dragon'=>'dragon', 'dark'=>'dark', 'fairy'=>'fairy', 'unknown'=>'unknown', 'shadow'=>'shadow'],
             'value' => function ($model) {
                 return implode(',', ArrayHelper::map($model->type, 'id', 'title'));
                     },
