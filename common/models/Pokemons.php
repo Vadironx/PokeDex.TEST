@@ -36,9 +36,9 @@ class Pokemons extends ActiveRecord
         [
             ['name', 'string', 'length' => [1, 128]],
             ['typeName', 'string', 'length' => [1, 128]],
-            // [['id', 'type'], 'safe'],
             [['id'], 'safe'],
         ];
         
     }
 }
+
